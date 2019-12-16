@@ -11,6 +11,11 @@ import ItemList from '../views/ItemList.vue'
 import HeroList from '../views/HeroList.vue'
 import HeroEdit from '../views/HeroEdit.vue'
 
+import ArticleList from '../views/ArticleList.vue'
+import ArticleEdit from '../views/ArticleEdit.vue'
+
+import AdList from '../views/AdList.vue'
+import AdEdit from '../views/AdEdit.vue'
 
 Vue.use(VueRouter)
 
@@ -30,7 +35,15 @@ const routes = [
 
       {path: '/heroes/create', component: HeroEdit},
       {path: '/heroes/edit/:id', component: HeroEdit, props: true}, // 把任何id注入HeroEdit页面
-      {path: '/heroes/list', component: HeroList}
+      {path: '/heroes/list', component: HeroList},
+
+      {path: '/articles/create', component: ArticleEdit},
+      {path: '/articles/edit/:id', component: ArticleEdit, props: true}, // 把任何id注入ArticleEdit页面
+      {path: '/articles/list', component: ArticleList},
+
+      {path: '/ads/create', component: AdEdit},
+      {path: '/ads/edit/:id', component: AdEdit, props: true}, // 把任何id注入AdEdit页面
+      {path: '/ads/list', component: AdList}
     ]
   },
   {
