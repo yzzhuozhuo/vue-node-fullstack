@@ -38,7 +38,7 @@ export default {
   methods: {
     afterUpload(res) {
       // alert(res)
-      this.$set(this.model, 'icon', res.url) 
+      this.$set(this.model, "icon", res.url);
     },
     async save() {
       let res;
