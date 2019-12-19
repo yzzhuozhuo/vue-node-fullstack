@@ -3,4 +3,6 @@ module.exports = app => {
   mongoose.connect('mongodb://127.0.0.1:27017/node-vue-fullStack', {
     useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false
   })
+
+  require('require-all')(__dirname + '/../models')
  }
